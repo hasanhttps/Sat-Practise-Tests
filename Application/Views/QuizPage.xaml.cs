@@ -1,10 +1,10 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using Application.ViewModels;
 using System.Windows.Controls;
 using Database.Entities.Concretes;
 
-namespace Application.Views {
+namespace Application.Views
+{
     public partial class QuizPage : Page {
 
         // Constructor

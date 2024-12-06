@@ -1,0 +1,2 @@
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Application.ViewModels.QuizPageModel.Calc(Object param) in C:\Users\hasan\Source\Repos\Sat-Practise-Tests\Application\ViewModels\QuizPageModel.cs:line 109

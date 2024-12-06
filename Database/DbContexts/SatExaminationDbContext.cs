@@ -11,8 +11,8 @@ public class SatExaminationDbContext : DbContext {
     // Configurations
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-
-        optionsBuilder.UseLazyLoadingProxies(true).UseSqlServer("Data Source=ASUSTUFGAMING\\SQLEXPRESS01;Database=SatExamination;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+        // Data Source=192.168.1.77,1433;Initial Catalog=SatExam;User ID=sadmin;Password=admin;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False
+        optionsBuilder.UseLazyLoadingProxies(true).UseSqlServer("Data Source=192.168.1.77,1433;Initial Catalog=SatExam;User ID=sadmin;Password=admin;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
         base.OnConfiguring(optionsBuilder);
     }

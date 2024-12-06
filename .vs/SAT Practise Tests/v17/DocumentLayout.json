@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|c:\\users\\hasan\\source\\repos\\sat-practise-tests\\application\\views\\examspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|solutionrelative:application\\views\\examspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|c:\\users\\hasan\\source\\repos\\sat-practise-tests\\application\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|solutionrelative:application\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|c:\\users\\hasan\\source\\repos\\sat-practise-tests\\application\\viewmodels\\exampagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|solutionrelative:application\\viewmodels\\exampagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C86949-9290-49D0-87AC-E7D2F8CB544D}|Database\\Database.csproj|c:\\users\\hasan\\source\\repos\\sat-practise-tests\\database\\dbcontexts\\satexaminationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C86949-9290-49D0-87AC-E7D2F8CB544D}|Database\\Database.csproj|solutionrelative:database\\dbcontexts\\satexaminationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|c:\\users\\hasan\\source\\repos\\sat-practise-tests\\application\\viewmodels\\quizpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|solutionrelative:application\\viewmodels\\quizpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|c:\\users\\hasan\\source\\repos\\sat-practise-tests\\application\\views\\quizpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F3EEC828-B12A-4293-81DE-A02E4B96D7B9}|Application\\Application.csproj|solutionrelative:application\\views\\quizpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "Application\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T11:18:49.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExamPageModel.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\ViewModels\\ExamPageModel.cs",
+              "RelativeDocumentMoniker": "Application\\ViewModels\\ExamPageModel.cs",
+              "ToolTip": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\ViewModels\\ExamPageModel.cs",
+              "RelativeToolTip": "Application\\ViewModels\\ExamPageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T11:16:07.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExamsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Views\\ExamsPage.xaml",
+              "RelativeDocumentMoniker": "Application\\Views\\ExamsPage.xaml",
+              "ToolTip": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Views\\ExamsPage.xaml",
+              "RelativeToolTip": "Application\\Views\\ExamsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-05T10:57:37.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SatExaminationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\DbContexts\\SatExaminationDbContext.cs",
+              "RelativeDocumentMoniker": "Database\\DbContexts\\SatExaminationDbContext.cs",
+              "ToolTip": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\DbContexts\\SatExaminationDbContext.cs",
+              "RelativeToolTip": "Database\\DbContexts\\SatExaminationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T07:40:31.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuizPageModel.cs",
+              "DocumentMoniker": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\ViewModels\\QuizPageModel.cs",
+              "RelativeDocumentMoniker": "Application\\ViewModels\\QuizPageModel.cs",
+              "ToolTip": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\ViewModels\\QuizPageModel.cs",
+              "RelativeToolTip": "Application\\ViewModels\\QuizPageModel.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T15:56:47.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuizPage.xaml",
+              "DocumentMoniker": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Views\\QuizPage.xaml",
+              "RelativeDocumentMoniker": "Application\\Views\\QuizPage.xaml",
+              "ToolTip": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Views\\QuizPage.xaml",
+              "RelativeToolTip": "Application\\Views\\QuizPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-02T15:20:11.301Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 101,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

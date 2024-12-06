@@ -11,6 +11,7 @@ using System.Windows.Threading;
 using System.Collections.Generic;
 using Database.Entities.Concretes;
 using System.Windows.Media.Imaging;
+using System.Collections.ObjectModel;
 using System.Runtime.CompilerServices;
 using static Application.Models.DatabaseNamespace.Database;
 
@@ -20,10 +21,12 @@ public class QuizPageModel : INotifyPropertyChanged {
 
     // Private Fields
 
-    private Module module;
+    public Module module;
+    private Desmos desmos;
     private Frame MainFrame;
     private Exam CurrentExam;
     private ListView AnswersLV;
+    private bool calcOpen = false;
     private int questionIndex = 0;
     private DispatcherTimer timer;
     private TimeSpan remainingTime;
@@ -31,10 +34,14 @@ public class QuizPageModel : INotifyPropertyChanged {
     private Question currentQuestion;
     private TextBox OpenEndedAnswerTB;
     private BitmapImage questionImage;
+    private int selectedQuestionNumber = 1;
+    private ObservableCollection<int> questionNumbers;
+    private DispatcherTimer topmostTimer = new DispatcherTimer();
     private Dictionary<Question, Answer> KeyValuePairs = new();
 
     // Binding Properties
 
+    public ICommand CalcButtonCommand { get; set; }
     public ICommand NextButtonCommand { get; set; }
     public ICommand PreviousButtonCommand { get; set; }
     public ICommand SelectionChangedCommand { get; set; }
@@ -65,6 +72,22 @@ public class QuizPageModel : INotifyPropertyChanged {
         }
     }
 
+    public ObservableCollection<int> QuestionsNumbers { get => questionNumbers; 
+        set { 
+            questionNumbers = value;
+            OnProperty();
+        } 
+    }
+
+    public int SelectedQuestionNumber { get => selectedQuestionNumber;
+        set { 
+            selectedQuestionNumber = value;
+            questionIndex = selectedQuestionNumber - 1;
+            SetQuestions();
+            OnProperty();
+        }
+    }
+
     // Constructor
 
     public QuizPageModel(Frame frame, Exam exam, ListView answers, TextBox openEndedAnswerBox) { 
@@ -74,15 +97,44 @@ public class QuizPageModel : INotifyPropertyChanged {
         AnswersLV = answers;
         OpenEndedAnswerTB = openEndedAnswerBox;
 
+        CalcButtonCommand = new RelayCommand(Calc);
         NextButtonCommand = new RelayCommand(NextQuestion);
         PreviousButtonCommand = new RelayCommand(PreviousQuestion);
         SelectionChangedCommand = new RelayCommand(SelectionChanged);
+
+        QuestionsNumbers = new ObservableCollection<int>();
 
         StartExam();
     }
 
     // Functions
 
+    private void Window_Closed(object sender, System.EventArgs e) {
+        calcOpen = false;
+    }
+
+    private void Calc(object? param) {
+        try {
+            if (!calcOpen) {
+                desmos = new Desmos("https://www.desmos.com/calculator?lang=tr");
+                desmos.Topmost = true;
+                calcOpen = true;
+                desmos.Show();
+            }
+            else {
+                var handle = new System.Windows.Interop.WindowInteropHelper(desmos).Handle;
+                NativeMethods.SetWindowPos(handle, (IntPtr)NativeMethods.HWND_TOPMOST, 0, 0, 0, 0,
+                    NativeMethods.SWP_NOMOVE | NativeMethods.SWP_NOSIZE);
+                desmos.Topmost = true;
+                desmos.Show();
+            }
+            desmos.Closed += Window_Closed!;
+        }
+        catch (Exception ex) {
+            File.WriteAllText("error.log", ex.ToString());
+        }
+
+    }
 
     private void PreviousQuestion(object? param) {
         if (questionIndex == 0) return;
@@ -163,7 +215,10 @@ public class QuizPageModel : INotifyPropertyChanged {
     }
 
     public void SetQuestions() {
-
+        if (Module.Subject == "Break Time") {
+            CurrentQuestion = new Question() { Module = Module, Answers = new List<Answer>() { new Answer(), new Answer() , new Answer() , new Answer() } };
+            return;
+        }
         CurrentQuestion = Module.Questions.ToList()[questionIndex];
         QuestionImage = LoadImage(CurrentQuestion.QuestionImage)!;
 
@@ -175,14 +230,19 @@ public class QuizPageModel : INotifyPropertyChanged {
             AnswersLV.Visibility = Visibility.Visible;
             OpenEndedAnswerTB.Visibility = Visibility.Collapsed;
         }
+
+        QuestionsNumbers.Clear();
+        var list = Module.Questions.Select(q => q.QuestionNumber).ToList();
+        list.ForEach(q => QuestionsNumbers.Add(q));
     }
 
     public void SetNextModule() {
-
+        // CurrentExam.Modules.Where(p => p.Subject == "Sat Math" && p.ModuleNumber == 1).First();
         questionIndex = 0;
         IfOpenEndedSetAnswer();
         if (Module.Subject == "Sat Verbal" && Module.ModuleNumber == 1) Module = CurrentExam.Modules.Where(p => p.Subject == "Sat Verbal" && p.ModuleNumber == 2).First();
-        else if (Module.Subject == "Sat Verbal" && Module.ModuleNumber == 2) Module = CurrentExam.Modules.Where(p => p.Subject == "Sat Math" && p.ModuleNumber == 1).First();
+        else if (Module.Subject == "Sat Verbal" && Module.ModuleNumber == 2) Module = new Module() { Exam = CurrentExam, Subject = "Break Time", Time = 10, Questions = new List<Question>() { new Question() {} } };
+        else if (Module.Subject == "Break Time") Module = CurrentExam.Modules.Where(p => p.Subject == "Sat Math" && p.ModuleNumber == 1).First();
         else if (Module.Subject == "Sat Math" && Module.ModuleNumber == 1) Module = CurrentExam.Modules.Where(p => p.Subject == "Sat Math" && p.ModuleNumber == 2).First();
         else if (Module.Subject == "Sat Math" && Module.ModuleNumber == 2) {
             StopExam();

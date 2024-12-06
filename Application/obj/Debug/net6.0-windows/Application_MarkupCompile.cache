@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\hasan\WPF Projects\Final Projects\SAT Practise Tests\Application\obj\Debug\net6.0-windows\
+C:\Users\hasan\source\repos\Sat-Practise-Tests\Application\obj\Debug\net6.0-windows\
 Application
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\hasan\WPF Projects\Final Projects\SAT Practise Tests\Application\App.xaml
-41399151920
-
-12772776966
-228-1737720979
-Views\ExamsPage.xaml;Views\LoginPage.xaml;Views\MainView.xaml;Views\QuizPage.xaml;
+C:\Users\hasan\source\repos\Sat-Practise-Tests\Application\App.xaml
+51777365519
+3-456672806
+14-811561317
+23184126807
+Views\Desmos.xaml;Views\ExamsPage.xaml;Views\LoginPage.xaml;Views\MainView.xaml;Views\QuizPage.xaml;
 
 False
 

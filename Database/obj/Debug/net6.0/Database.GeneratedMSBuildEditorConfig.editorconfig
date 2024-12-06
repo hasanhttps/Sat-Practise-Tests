@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Database
-build_property.ProjectDir = C:\Users\hasan\WPF Projects\Final Projects\SAT Practise Tests\Database\
+build_property.ProjectDir = C:\Users\hasan\source\repos\Sat-Practise-Tests\Database\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Application\\Application.csproj": {}
+    "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Application\\Application.csproj": {
+    "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Application\\obj\\",
+        "outputPath": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Database\\Database.csproj"
+              "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\Database.csproj"
               }
             }
           }
@@ -42,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,6 +67,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.24, )"
+            },
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.2903.40, )"
             }
           },
           "imports": [
@@ -78,6 +84,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -86,25 +110,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Database\\Database.csproj": {
+    "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Database\\Database.csproj",
+        "projectUniqueName": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Database\\Database.csproj",
+        "projectPath": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hasan\\WPF Projects\\Final Projects\\SAT Practise Tests\\Database\\obj\\",
+        "outputPath": "C:\\Users\\hasan\\source\\repos\\Sat-Practise-Tests\\Database\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,6 +132,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -124,6 +145,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -164,12 +190,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.33, 6.0.33]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
